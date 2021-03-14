@@ -11,7 +11,7 @@ app.get("/",function(req,res){
 
 app.post("/",function(req,res){
   const query = req.body.cityName;
-  const apiKey = "b42f342c146c70243713fe251df11886";
+  const apiKey = ""; //commented out
   const unit="imperial";
   const url="https://api.openweathermap.org/data/2.5/weather?q="+query+"&appid="+apiKey+"&units="+unit;
 
